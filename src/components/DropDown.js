@@ -20,6 +20,7 @@ const DropDown = props => {
     const setCharacterValue = event => {
         if (event.key === 'Enter') {
             props.selectCharacter(value)
+            setValue('')
         }
     }
 
@@ -29,10 +30,26 @@ const DropDown = props => {
             <input 
                 value={value} 
                 onChange={(e) => setValue(e.target.value)}
-                onKeyDown={(e) => setCharacterValue(e)}
+                onKeyDown={(e) => props.selectCharacter(e)}
             />
             <label>Select a Character:</label>
-            <select value={props.characters}></select>
+            <select 
+                className="drop-down-items"
+                disabled={props.loading} 
+                value={props.characters}
+                onChange={(e) => {
+                    props.selectCharacter(e.currentTarget.value)
+                }}
+            >
+            {props.characters.map(character => (
+                <option
+                    key={character.index}
+                    value={character.index}
+                >
+                {character.name}
+                </option>
+            ))}
+            </select>
         </div>
     )
 }

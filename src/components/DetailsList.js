@@ -1,9 +1,13 @@
 import React from 'react'
 
-const DetailsList = () => {
+const DetailsList = props => {
     return (
         <div>
-            <h1>DetailsList</h1>
+            <ul className="details-list-style">
+                {props.charDetails.map((detail, index) => (
+                    <li key={index}>{detail}</li>
+                ))}
+            </ul>
         </div>
     )
 }
