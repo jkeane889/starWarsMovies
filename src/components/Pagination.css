@@ -1,0 +1,7 @@
+.pagination-grid {
+    display: grid;
+    grid-auto-flow: column;
+    margin: 5%;
+    grid-gap: 2% 2vw;
+    justify-content: center;
+}
