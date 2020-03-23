@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![starWarsLogo](https://github.com/jkeane889/starWarsMovies/blob/master/src/assets/1280px-Star_Wars_Logo.svg.png)
 
 ## Available Scripts
 
