@@ -1,8 +1,17 @@
 ![starWarsLogo](https://github.com/jkeane889/starWarsMovies/blob/master/src/assets/1280px-Star_Wars_Logo.svg.png)
 
-## Available Scripts
+# Star Wars Characters
+This is a repo utilizing the Star Wars API to let you discover the movies that each Star Wars character from the Canon Universe was in.  Select your favorite character from the drop down menu and see what movies they were in!
 
-In the project directory, you can run:
+[Star Wars API](https://swapi.co/)
+
+## Getting Started
+
+1. First, download this repository to a folder by using `git clone https://github.com/jkeane889/starWarsMovies.git`
+2. Run `npm install` to install requisite npm packages
+3. Run `npm start` to launch the program in your local browser.
+
+See further instructions on the commands included in a Create React App.
 
 ### `npm start`
 
